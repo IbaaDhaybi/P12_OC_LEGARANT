@@ -4,7 +4,7 @@
  * 2- Modification d'un contact
  * 3- Déactivation d'un contact
  * @author            : Ibaa Dhaybi
- * @last modified on  : 09-26-2022
+ * @last modified on  : 10-04-2022
 **/
 @RestResource(urlMapping='/ContactManager/v1/*')
 global with sharing class ContactManager {
@@ -71,7 +71,7 @@ global with sharing class ContactManager {
         String id = request.requestURI.substring(request.requestURI.lastIndexOf('/')+1);
         
         // Parcourir la valeur du champs Deactivated__c
-        Contact result = [SELECT Deactivated__c FROM Contact WHERE Id = :id];
+        Contact result = [SELECT Id, Deactivated__c FROM Contact WHERE Id = :id];
         Contact thisContact = new Contact(); 
         thisContact.Id = id; 
         thisContact.Deactivated__c = true;  

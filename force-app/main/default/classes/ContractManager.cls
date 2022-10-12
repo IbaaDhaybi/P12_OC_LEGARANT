@@ -3,7 +3,7 @@
  * 1- Création d'un nouveau contract
  * 2- Modification d'un contract
  * @author            : Ibaa Dhaybi
- * @last modified on  : 09-26-2022
+ * @last modified on  : 10-04-2022
 **/
 @RestResource(urlMapping='/ContractManager/v1/*')
 global with sharing class ContractManager {
@@ -11,7 +11,7 @@ global with sharing class ContractManager {
     @HttpPost
     global static Id createNewContract(String Name, String Status, Id AccountId, Date StartDate, Integer ContractTerm) {
         
-        // Création d’un nuveau contrat
+        // Création d’un nouveau contrat
         Contract thisContract = new Contract(
             Name = Name,
             Status = Status,
