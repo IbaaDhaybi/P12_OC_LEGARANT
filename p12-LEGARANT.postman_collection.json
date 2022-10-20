@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "a87cc56f-8197-46af-9724-4272f10b4981",
+		"name": "p12-LEGARANT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18943609"
+	},
+	"item": [
+		{
+			"name": "create contact",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Authorization: Bearer 00D7Q000007b2wP!AR4AQCYXgKTCOTfqYIZSs_cSccGLMubYvZ74l.7lY.felaE5rXyltHf72bMlHBN95_QcQSC06Zel1n23DlTwnDNjih_Ay92h",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"FirstName\": \"Rose\",\r\n    \"LastName\" : \"Test\",\r\n    \"Phone\"    : \"+3356565656\",\r\n    \"Email\"    : \"rosetest@gmail.com\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "https://hdo-dev-ed.my.salesforce.com/services/apexrest/ContactManager/v1/",
+					"protocol": "https",
+					"host": [
+						"hdo-dev-ed",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"apexrest",
+						"ContactManager",
+						"v1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update contact",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Authorization: Bearer 00D7Q000007b2wP!AR4AQCYXgKTCOTfqYIZSs_cSccGLMubYvZ74l.7lY.felaE5rXyltHf72bMlHBN95_QcQSC06Zel1n23DlTwnDNjih_Ay92h",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"FirstName\": \"Rose\",\r\n    \"LastName\" : \"Rosa\",\r\n    \"Phone\"    : \"+3356565656\",\r\n    \"Email\"    : \"roserosa@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "https://hdo-dev-ed.my.salesforce.com/services/apexrest/ContactManager/v1/0037Q00000R4C7iQAF",
+					"protocol": "https",
+					"host": [
+						"hdo-dev-ed",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"apexrest",
+						"ContactManager",
+						"v1",
+						"0037Q00000R4C7iQAF"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deactivate contact",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Authorization: Bearer 00D7Q000007b2wP!AR4AQCYXgKTCOTfqYIZSs_cSccGLMubYvZ74l.7lY.felaE5rXyltHf72bMlHBN95_QcQSC06Zel1n23DlTwnDNjih_Ay92h",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Deactivated__c\" : \"true\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "https://hdo-dev-ed.my.salesforce.com/services/apexrest/ContactManager/v1/0037Q00000R4C7iQAF",
+					"protocol": "https",
+					"host": [
+						"hdo-dev-ed",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"apexrest",
+						"ContactManager",
+						"v1",
+						"0037Q00000R4C7iQAF"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create contract",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Authorization: Bearer 00D7Q000007b2wP!AR4AQCYXgKTCOTfqYIZSs_cSccGLMubYvZ74l.7lY.felaE5rXyltHf72bMlHBN95_QcQSC06Zel1n23DlTwnDNjih_Ay92h",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\" : \"Legarant\",\r\n    \"Status\" : \"Draft\",\r\n    \"AccountId\" : \"0017Q00000eqosEQAQ\",\r\n    \"StartDate\" : \"2023-01-01\"\r\n}"
+				},
+				"url": {
+					"raw": "https://hdo-dev-ed.my.salesforce.com/services/apexrest/ContractManager/v1/0017Q00000eqosEQAQ",
+					"protocol": "https",
+					"host": [
+						"hdo-dev-ed",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"apexrest",
+						"ContractManager",
+						"v1",
+						"0017Q00000eqosEQAQ"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update contract",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Authorization: Bearer 00D7Q000007b2wP!AR4AQCYXgKTCOTfqYIZSs_cSccGLMubYvZ74l.7lY.felaE5rXyltHf72bMlHBN95_QcQSC06Zel1n23DlTwnDNjih_Ay92h",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\" : \"Legarant\",\r\n    \"Status\" : \"Activated\",\r\n    \"AccountId\" : \"0017Q00000eqosEQAQ\",\r\n    \"StartDate\" : \"2023-02-02\"\r\n}"
+				},
+				"url": {
+					"raw": "https://hdo-dev-ed.my.salesforce.com/services/apexrest/ContractManager/v1/8007Q000000YGjMQAW",
+					"protocol": "https",
+					"host": [
+						"hdo-dev-ed",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"apexrest",
+						"ContractManager",
+						"v1",
+						"8007Q000000YGjMQAW"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
